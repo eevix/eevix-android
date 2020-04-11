@@ -25,11 +25,25 @@ android {
 
 apply plugin: 'maven'
 group = 'com.eevix.android'
-version = '1.0-SNAPSHOT'
+version = '1.1-SNAPSHOT'
 
 uploadArchives {
     repositories {
         mavenLocal()
+        mavenDeployer {
+            pom.artifactId = 'util'
+            pom.version = '1.1.2'
+            repository(url: 'https://repo.rdc.aliyun.com/repository/128507-release-gxDXNN/') {
+                authentication(userName: 'xkrtxb', password: 'Hs04MgWlWe')
+            }
+        }
+        mavenDeployer {
+            pom.artifactId = 'util'
+            pom.version = '1.1-SNAPSHOT'
+            repository(url: 'https://repo.rdc.aliyun.com/repository/128507-snapshot-SeDF4T/') {
+                authentication(userName: 'xkrtxb', password: 'Hs04MgWlWe')
+            }
+        }
     }
 }
 
