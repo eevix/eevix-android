@@ -1,4 +1,4 @@
-package com.eevix.android.common.util;
+package com.eevix.android.util;
 
 import android.util.Log;
 

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.eevix.android.common.util.Logger;
+import com.eevix.android.util.Logger;
 
 public class MainActivity extends AppCompatActivity {
     private final String TAG = "MainActivity";
